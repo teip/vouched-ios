@@ -13,8 +13,6 @@ Pod::Spec.new do |s|
 
   s.platform = :ios
   s.ios.deployment_target = '12.0'
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.default_subspec = 'Core'
   s.subspec 'Core' do |cr|
